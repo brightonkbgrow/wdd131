@@ -50,3 +50,9 @@ justify-content: space-around;
 display: grid;
 width: 800px;
 }
+
+.card {
+border: #4e0707;
+border-radius: 15px;
+
+}

@@ -8,7 +8,7 @@ document.getElementById('currentYear').textContent = currentYear;
 const lastModified = new Date(document.lastModified);
 
 // Format the last modified date
-const formattedLastModified = `${lastModified.getMonth() + 1}/${lastModified.getDate()}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes()}:${lastModified.getSeconds()}`;
+const formattedLastModified = lastModified.toLocaleDateString();
 
 // Output the formatted last modified date in the footer's second paragraph
 document.getElementById('lastModified').textContent = formattedLastModified;

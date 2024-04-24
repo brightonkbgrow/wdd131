@@ -50,7 +50,6 @@ justify-content: space-around;
 display: grid;
 grid-template-rows: 1fr repeat(8);
 border: 1px solid #4e0707;
-border-radius: 15px;
 margin: 10px;
 }
 h2 {

@@ -63,6 +63,7 @@ grid-gap: 20px;
 
 .aboutmetext {
 grid-column: 1;
+font-size: 30px;
 }
 .aboutmeimg {
 grid-column: 2;

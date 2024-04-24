@@ -47,9 +47,10 @@ display: flex;
 justify-content: space-around;
 }
 
+
 .familyphoto {
 display: grid;
-columns: 1/2;
+columns: 2/3;
 width: 100%;
 }
 

@@ -42,13 +42,11 @@ nav a {
 }
 
 main {
-grid-template-rows: 1fr 1fr 1fr;
 display: flex;
 justify-content: space-around;
 }
 
 .familyphoto {
 display: grid;
-width: 400px;
-columns: 1/2;
+width: 800px;
 }

@@ -48,7 +48,7 @@ justify-content: space-around;
 
 .card {
 display: grid;
-grid-template-rows: 1fr repeat(7);
+grid-template-rows: 1fr repeat(8);
 border: 2px solid #4e0707;
 border-radius: 15px;
 
@@ -61,21 +61,25 @@ width: 800px;
 h2 {
 font-size: 50px;
 text-align: center;
+grid-row: 1/2;
 }
 
 #devlink1 {
-grid-row: 1/2;
+grid-row: 2/3;
 
 }
 #devlink2{
-grid-row: 2/3;
+grid-row: 3/4;
 }
 #devlink3{
-grid-row: 3/4
+grid-row: 4/5
 }
 #devlink4{
-grid-row: 4/5;
-
+grid-row: 5/6;
 }
-#devlink5
-#devlink6
+#devlink5{
+grid-row: 6/7;
+}
+#devlink6{
+grid-row: 7/8;
+}

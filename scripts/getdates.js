@@ -1,3 +1,6 @@
-const currentYear = document.querySelector("#currentYear");
-const today = new Date();
-currentYear.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
+
+const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').textContent = currentYear;
+
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = lastModified;

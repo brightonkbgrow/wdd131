@@ -59,6 +59,11 @@ font-size: 50px;
 text-align: center;
 grid-row: 1/2;
 }
+.card > h2 {
+    background-color: #4e0707; /* Change the color as desired */
+    color: white; /* Text color for better contrast */
+    padding: 20px 0; /* Adjust padding as needed */
+    margin: 0;
 #card1{
 grid-column: 1/3;    
 }

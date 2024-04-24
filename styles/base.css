@@ -60,6 +60,7 @@ font-size: 50px;
 text-align: center;
 padding: 20px 0;
 margin: 0;
+border-radius: 15px;
 }
 #card1{
 grid-column: 1/3;    

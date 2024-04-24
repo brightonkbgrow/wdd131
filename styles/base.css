@@ -17,7 +17,7 @@ body {
 
 header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    
     height: 100%;
     width: 100%;
     text-align: center;
@@ -42,7 +42,13 @@ nav a {
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
+grid-template-rows: 1fr 1fr 1fr;
+display: flex;
+justify-content: space-around;
+}
+
+#familyphoto {
+display: grid;
+columns: 1/2;
 
 }

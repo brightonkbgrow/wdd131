@@ -1,14 +1,13 @@
-year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;
+// getdates.js
 
-const pattern = /last_modif\s*=\s*([^;]*)/;
+// Get the current year
+var currentYear = new Date().getFullYear();
 
-const lastVisit = parseFloat(document.cookie.replace(pattern, "$1"));
-const lastModif = Date.parse(document.lastModified);
+// Output the current year in the footer's first paragraph
+document.getElementById('currentYear').textContent = currentYear;
 
-if (Number.isNaN(lastVisit) || lastModif > lastVisit) {
-  document.cookie = `last_modif=${Date.now()}; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=${
-    location.pathname
-  }`;
+// Get the last modified date of the document
+var lastModified = document.lastModified;
 
-  if (isFinite(lastVisit)) {
-    alert("This page has been changed!");
+// Output the last modified date in the footer's second paragraph
+document.getElementById('lastModified').textContent = lastModified;

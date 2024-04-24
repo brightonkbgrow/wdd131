@@ -3,6 +3,8 @@
 div {max-width: 1600px}
 #content {margin: 0 auto;}
 body {
+margin: 0;
+padding: 0;
 background-color: #F2F0DF;
 font-family: "Inter", sans-serif;
 }

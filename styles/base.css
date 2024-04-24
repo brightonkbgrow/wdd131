@@ -40,33 +40,37 @@ nav a {
     color: white;
 
 }
-
 main {
 display: flex;
 justify-content: space-around;
 }
-
 .card {
 display: grid;
 grid-template-rows: 1fr repeat(8);
 border: 2px solid #4e0707;
 border-radius: 15px;
-
-.devlink {
-font-size: 34px;
-font-weight: bold;
-}
-.familyphoto {
-display: grid;
-width: 800px;
-}
-
 h2 {
 font-size: 50px;
 text-align: center;
 grid-row: 1/2;
 }
+.familyphoto {
+display: grid;
+width: 800px;
+}
+.aboutmetext {
+flex: 1;
+}
+.aboutmeimg {
+flex: 1;
+text-align: center;
+}
 
+
+.devlink {
+font-size: 34px;
+font-weight: bold;
+}
 #devlink1 {
 grid-row: 2/3;
 }

@@ -57,7 +57,6 @@ background-color: #4e0707;
 color: white;
 font-size: 50px;
 text-align: center;
-grid-row: 1/2;
 padding: 20px 0;
 margin: 0;
 }
@@ -83,6 +82,10 @@ width: 75%;
 }
 #card2{
 grid-column: 3;
+}
+.devbanner{
+grid-row: 1/2;
+
 }
 .devlink {
 font-size: 34px;

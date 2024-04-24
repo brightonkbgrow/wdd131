@@ -88,10 +88,10 @@ text-align: center;
 border: 10px;
 }
 .fedexborder {
-    grid-column: 1;
-    grid-row: 2;
-    text-align: center;
-    }
+grid-column: 1;
+grid-row: 2;
+text-align: center;
+}
 .familyphoto {
 margin-top: 30px;
 width: 90%;
@@ -100,7 +100,6 @@ width: 90%;
 width: 90%;
 }
 #card2{
-
 grid-column: 3;
 }
 .devbanner{

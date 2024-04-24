@@ -17,6 +17,7 @@ body {
 h1 {
 font-size: 56px;
 font-weight: bolder;
+margin-bottom: -20px;
 }
 header {
     display: grid;

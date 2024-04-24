@@ -46,13 +46,18 @@ display: flex;
 justify-content: space-around;
 }
 
+.card {
+border: 2px solid #4e0707;
+border-radius: 15px;
+
+}
 .familyphoto {
 display: grid;
 width: 800px;
 }
 
-.card {
-border: 2px solid #4e0707;
-border-radius: 15px;
+
+h2 {
+font-size: 50px;
 
 }

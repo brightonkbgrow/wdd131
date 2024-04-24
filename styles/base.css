@@ -40,7 +40,7 @@ nav {
 nav a {
     color: white;
 }
-nav a :hover{
+nav a:hover{
 color: blue;
 
 }

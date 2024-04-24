@@ -95,24 +95,7 @@ height: 60px;
 font-size: 34px;
 font-weight: bold;
 }
-#devlink1 {
-grid-row: 2/3;
-}
-#devlink2{
-grid-row: 3/4;
-}
-#devlink3{
-grid-row: 4/5
-}
-#devlink4{
-grid-row: 5/6;
-}
-#devlink5{
-grid-row: 6/7;
-}
-#devlink6{
-grid-row: 7/8;
-}
+
 footer{
 background-color: #4e0707;
 height: 75px;

@@ -1,13 +1,2 @@
-// getdates.js
-
-// Get the current year
-var currentYear = new Date().getFullYear();
-
-// Output the current year in the footer's first paragraph
-document.getElementById('currentYear').textContent = currentYear;
-
-// Get the last modified date of the document
-var lastModified = document.lastModified;
-
-// Output the last modified date in the footer's second paragraph
-document.getElementById('lastModified').textContent = lastModified;
+const year = document.querySelector("#year");
+year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;

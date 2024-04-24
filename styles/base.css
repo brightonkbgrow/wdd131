@@ -33,6 +33,7 @@ nav {
     display: flex;
     font-size: 38px;
     padding: 10px 0;
+    margin: 15px;
     justify-content: space-around;
     background-color: #4e0707;
 }

@@ -85,7 +85,7 @@ grid-column: 3;
 }
 .devbanner{
 grid-row: 1/2;
-height: 70px;
+height: 64px;
 }
 .devlink {
 font-size: 34px;

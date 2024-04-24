@@ -55,17 +55,22 @@ font-size: 50px;
 text-align: right;
 grid-row: 1/2;
 }
-.familyphoto {
-width: 600px;
-}
-.aboutmetext {
-flex: 1;
-}
-.aboutmeimg {
-flex: 1;
-text-align: center;
+.card1{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 20px;
 }
 
+.aboutmetext {
+grid-column: 1;
+}
+.aboutmeimg {
+grid-column: 2;
+text-align: center;
+}
+.familyphoto {
+width: 100%;
+}
 
 .devlink {
 font-size: 34px;

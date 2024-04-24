@@ -10,6 +10,7 @@ font-family: "Inter", sans-serif;
 }
 header {
 display: grid;
+grid-template-rows: 1fr 1fr;
 height: 50px;
 width: 100%;
 text-align: center;

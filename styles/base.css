@@ -41,7 +41,8 @@ nav a {
 
 }
 main {
-display: flex;
+display: grid;
+grid-template-columns: 1fr;
 justify-content: space-around;
 }
 .card {

@@ -47,7 +47,7 @@ display: flex;
 justify-content: space-around;
 }
 
-#familyphoto {
+.familyphoto {
 display: grid;
 columns: 1/2;
 width: 100%;

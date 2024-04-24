@@ -1,10 +1,14 @@
+// Get the current year
 const currentYear = new Date().getFullYear();
 
 // Output the current year in the footer's first paragraph
 document.getElementById('currentYear').textContent = currentYear;
 
 // Get the last modified date of the document
-const lastModified = document.lastModified;
+const lastModified = new Date(document.lastModified);
 
-// Output the last modified date in the footer's second paragraph
-document.getElementById('lastModified').textContent = lastModified;
+// Format the last modified date
+const formattedLastModified = `${lastModified.getMonth() + 1}/${lastModified.getDate()}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes()}:${lastModified.getSeconds()}`;
+
+// Output the formatted last modified date in the footer's second paragraph
+document.getElementById('lastModified').textContent = formattedLastModified;

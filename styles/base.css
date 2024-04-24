@@ -43,7 +43,7 @@ nav a {
 
 main {
 grid-template-rows: 1fr 1fr 1fr;
-display: grid;
+display: flex;
 justify-content: space-around;
 }
 

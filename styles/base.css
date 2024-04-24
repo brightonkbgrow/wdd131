@@ -11,8 +11,9 @@ width: 100%;
 height: 100%;
 display: flex;
 justify-content: space-around;
-background-color: #800000;
-
-
+background-color: #4e0707;
+}
+nav a {
+color: white;
 
 }

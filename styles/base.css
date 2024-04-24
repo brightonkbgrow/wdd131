@@ -12,6 +12,7 @@ header {
 display: grid;
 height: 50px;
 width: 100%;
+text-align: center;
 
 }
 nav {

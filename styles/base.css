@@ -55,7 +55,6 @@ text-align: center;
 grid-row: 1/2;
 }
 .familyphoto {
-display: grid;
 width: 800px;
 }
 .aboutmetext {

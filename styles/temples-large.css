@@ -1,8 +1,8 @@
 @media screen and (min-width: 500px) {
     .imgsection {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
-        grid-gap: 10px; /* Adjust the gap between images */
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0px;
     }
 }
 @media (min-width: 640px) {
@@ -17,9 +17,8 @@
 	header {
 		display: flex;
 		align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	}
-	
 	nav {
 		justify-content: flex-end;
 		flex-direction: row;

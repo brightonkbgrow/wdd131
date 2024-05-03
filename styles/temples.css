@@ -68,6 +68,10 @@ main{
     width: 100%;
     max-width: 100%;
     height: auto;
+	justify-content: space-around;
+}
+figcaption{
+	text-align: center;
 }
 footer{
     background-color: rgb(63, 63, 63);

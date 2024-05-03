@@ -45,7 +45,7 @@ nav a:hover {
     display: block;
 }
 h2{
-	grid-column: 1;
+	grid-row: 1;
 	margin-bottom: 5px;
 	text-align: center;
 	font-size: 50px;
@@ -57,9 +57,14 @@ main {
 }
 .notimage{
 	display: grid;
-	grid-template-columns: 1fr;
-}
+	grid-template-rows: 1fr;
+	border: 1px solid green;
 
+}
+.imageblock{
+	
+	border: 1px solid green;
+}
 
 footer{
     background-color: rgb(63, 63, 63);

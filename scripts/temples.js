@@ -24,27 +24,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
 // Function to adjust grid layout and image size based on viewport width
 function adjustLayout() {
     const main = document.querySelector('main');
     const images = document.querySelectorAll('.image');
 
+    // Calculate the number of columns based on the viewport width
+    let numColumns;
     if (window.innerWidth < 600) {
-        main.style.gridTemplateColumns = 'repeat(1, minmax(200px, 1fr))'; // 1 column for viewport width < 600px
-        images.forEach(image => {
-            image.style.maxWidth = 'calc(100% - 10px)'; // Reduce image size for 1-column layout
-        });
+        numColumns = 1; // 1 column for viewport width < 600px
     } else if (window.innerWidth < 900) {
-        main.style.gridTemplateColumns = 'repeat(2, minmax(200px, 1fr))'; // 2 columns for viewport width < 900px
-        images.forEach(image => {
-            image.style.maxWidth = 'calc(50% - 10px)'; // Reduce image size for 2-column layout
-        });
+        numColumns = 2; // 2 columns for viewport width < 900px
     } else {
-        main.style.gridTemplateColumns = 'repeat(3, minmax(200px, 1fr))'; // 3 columns for viewport width >= 900px
-        images.forEach(image => {
-            image.style.maxWidth = '100%'; // Reset image size for default layout
-        });
+        numColumns = 3; // 3 columns for viewport width >= 900px
     }
+
+    // Calculate the width of each column
+    const columnWidth = `${100 / numColumns}%`;
+
+    // Set grid template columns with a minimum width for each column
+    main.style.gridTemplateColumns = `repeat(${numColumns}, minmax(200px, 1fr))`; // Adjust the minimum width as needed
+
+    // Set max-width for images to fill the column width
+    images.forEach(image => {
+        image.style.maxWidth = `calc(${columnWidth} - 10px)`; // Subtract margin/padding
+    });
 }
 
 // Initial adjustment on page load

@@ -7,7 +7,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 header {
-    font-size: 25px;
+    font-size: 40px;
 	background-color: rgb(63, 63, 63);
 	display: grid;
 	grid-gap: 1rem;
@@ -21,6 +21,7 @@ main {
 h1 {
 	font-size: 2rem;
     color: white;
+	font-size: 50px;
 }
 nav {
 	background-color: aqua;
@@ -53,7 +54,7 @@ footer{
 
 
 
-@media (min-width: 740px) {
+@media (min-width: 1050px) {
 	header {
 		display: flex;
 		align-items: center;

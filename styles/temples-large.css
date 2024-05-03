@@ -1,6 +1,8 @@
 @media screen and (min-width: 500px) {
     main {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-gap: 10px; /* Adjust the gap between images */
     }
 }
 
@@ -37,11 +39,6 @@
 
 
 
-
-
-
-
-
 .image {
     width: 100%; /* Ensure images fill their grid cell */
     max-width: 100%; /* Ensure images don't exceed their container width */
@@ -62,16 +59,8 @@
     }
 }
 
-/* Adjust image size for narrower screens */
-@media screen and (max-width: 900px) {
-    .image {
-        max-width: calc(50% - 10px); /* Reduce image size for 2-column layout */
-    }
-}
 
-/* Further adjust image size for even narrower screens */
-@media screen and (max-width: 600px) {
-    .image {
-        max-width: calc(100% - 10px); /* Reduce image size for 1-column layout */
-    }
-}
+
+
+
+

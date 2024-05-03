@@ -1,12 +1,10 @@
 @media screen and (min-width: 500px) {
-    main {
+    .imgsection {
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Three columns */
         grid-gap: 10px; /* Adjust the gap between images */
     }
 }
-
-
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
@@ -15,7 +13,6 @@
 		flex: 1 1 100%;
 	}
 }
-
 @media (min-width: 1050px) {
 	header {
 		display: flex;
@@ -36,26 +33,14 @@
         display: none;
     }
 }
-
-
-
-.image {
-    width: 100%; /* Ensure images fill their grid cell */
-    max-width: 100%; /* Ensure images don't exceed their container width */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Adjust layout for narrower screens */
 @media screen and (max-width: 900px) {
-    main {
-        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Change to 2 columns when viewport width is less than 900px */
+    .imgsection {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
 }
-
-/* Further adjust layout for even narrower screens */
 @media screen and (max-width: 600px) {
-    main {
-        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* Change to 1 column when viewport width is less than 600px */
+    .imgsection {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
 }
 

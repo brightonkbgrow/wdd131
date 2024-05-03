@@ -1,14 +1,7 @@
-
-
-
-
-
-// Function to adjust grid layout based on available space
 function adjustGrid() {
     const main = document.querySelector('main');
     const images = document.querySelectorAll('.image');
 
-    // Calculate the number of columns based on available space
     const numColumns = Math.min(Math.floor(main.clientWidth / 200), 3); // Minimum column width is 200px
 
     // Set grid template columns with the calculated number of columns

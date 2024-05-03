@@ -13,3 +13,25 @@
 		flex: 1 1 100%;
 	}
 }
+
+@media (min-width: 1050px) {
+	header {
+		display: flex;
+		align-items: center;
+	justify-content: space-between;
+	}
+	
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+        position:relative;
+	}
+	nav a {
+        display: block;
+		flex: 1 1 100%;
+	}
+    .hamburger {
+        display: none;
+    }
+}
+

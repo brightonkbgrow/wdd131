@@ -29,7 +29,7 @@ nav {
     position: relative;
 }
 nav a {
-	display: block;
+	display: none;
 	color: white;
 	text-align: center;
 	padding: 1rem;
@@ -39,6 +39,9 @@ nav a:hover {
 	text-decoration: underline;
     color: aqua;
     border: 1px solid aqua;
+}
+.hamburger {
+    display: block;
 }
 footer{
     background-color: rgb(63, 63, 63);
@@ -60,12 +63,13 @@ footer{
 	nav {
 		justify-content: flex-end;
 		flex-direction: row;
+        position:relative;
 	}
 	nav a {
+        display: block;
 		flex: 1 1 100%;
-        display: none;
 	}
     .hamburger {
-        display: block;
+        display: none;
     }
 }

@@ -19,9 +19,6 @@ h1{
     grid-column: 1;
     align-self: center;
 }
-body{
-    background-color: darkorchid
-}
 
 .datatable{
     display: grid;
@@ -29,8 +26,8 @@ body{
 
     font-family: "Roboto", sans-serif;
     background-color: rgb(245, 214, 174);
-    border: 3px solid darkorchid;
-    border-top: 6px solid darkorchid;
+    border: 3px solid white;
+    border-top: 6px solid white;
 }
 .weathertable{
     display: grid;
@@ -38,7 +35,7 @@ body{
 
     font-family: "Roboto", sans-serif;
     background-color: rgb(245, 214, 174);
-    border: 3px solid darkorchid;
+    border: 3px solid white;
     
 }
 .infotype{

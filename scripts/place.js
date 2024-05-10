@@ -41,7 +41,10 @@ function calculateWindChill(temperature, windSpeed) {
     const footer = document.getElementById('footer');
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
-    const lastModifiedDate = document.lastModified;
-    footer.innerHTML = `&copy; ${currentYear} | Last Modified: ${lastModifiedDate}`;
+    const lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = lastModified;
+
+
+
   };
   

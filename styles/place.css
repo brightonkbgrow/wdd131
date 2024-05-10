@@ -26,7 +26,7 @@ body{
 .datatable{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 50px 1fr;
+
     font-family: "Roboto", sans-serif;
     background-color: rgb(245, 214, 174);
     border: 3px solid darkorchid;
@@ -35,7 +35,7 @@ body{
 .weathertable{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row: 50px 1fr;
+
     font-family: "Roboto", sans-serif;
     background-color: rgb(245, 214, 174);
     border: 3px solid darkorchid;

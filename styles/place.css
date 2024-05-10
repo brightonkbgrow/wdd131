@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --main-bg-color: aqua;
+    --secondary-bg-color: rgb(245, 214, 174);
+    --text-color: black;
+}
+
 
 footer{
-    background-color: aqua;
+    background-color: var(--main-bg-color);
     height: 75px;
     text-align: center;
     padding: 10px;
@@ -21,7 +27,7 @@ footer{
         font-family: "Jaro", sans-serif;
         font-weight: 100;
         margin: 0px;
-        background-color: aqua;
+        background-color: var(--main-bg-color);
     }
     #heroimage{
         width: 100%;
@@ -34,7 +40,7 @@ footer{
         grid-template-columns: 1fr 1fr;
 
         font-family: "Roboto", sans-serif;
-        background-color: rgb(245, 214, 174);
+        background-color: var(--secondary-bg-color);
         border: 3px solid white;
         border-top: 6px solid white;
     }
@@ -84,10 +90,6 @@ footer{
 }
 
 
-
-
-
-
 @media screen and (min-width: 1000px) {
     body{
         margin: 20px;
@@ -103,7 +105,7 @@ footer{
         font-family: "Jaro", sans-serif;
         font-weight: 100;
         margin: 0px;
-        background-color: aqua;
+        background-color: var(--main-bg-color);
     }
     #heroimage{
         width: 100%;
@@ -125,7 +127,7 @@ footer{
         height: 400px;
         margin-top: -800px;
         font-family: "Roboto", sans-serif;
-        background-color: rgb(245, 214, 174);
+        background-color: var(--secondary-bg-color);
         border-radius: 4px;
         border-left: 10px;
         margin-left: 20px;
@@ -140,12 +142,9 @@ footer{
         margin-top: -400px;
         margin-right: 20px;
         font-family: "Roboto", sans-serif;
-        background-color: rgb(245, 214, 174);
+        background-color: var(--secondary-bg-color);
         border-radius: 4px;
     }
-
-
-
     .datafield{
         grid-column:1/2;
         text-align: right;
@@ -159,7 +158,7 @@ footer{
         grid-column: 1/2;
         width:100%;
         height: 100px;
-        background-color: aqua;
+        background-color: var(--main-bg-color);
         font-size: 44px;
         font-weight: 200;
         text-align: left;
@@ -180,12 +179,6 @@ footer{
         grid-column:2/3;
         margin-left: 5px;
     }
-
-
-
-
-
-
     .weatheremoji{
         display: grid;
         
@@ -201,8 +194,14 @@ footer{
         max-width: 100px;
         justify-self: center;
     }
+    .weatheremoji::after {
+        content: url('images/cloud.svg');
+        display: block;
+        margin-top: 10px; /* Adjust as needed */
+    }
+
     footer{
-        background-color: aqua;
+        background-color: var(--main-bg-color);
         height: 75px;
         text-align: center;
         padding: 10px;

@@ -1,0 +1,67 @@
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h1{
+    width:100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 144px;
+    margin: 0px;
+    background-color: rgb(245, 214, 174);
+}
+#heroimage{
+    width: 100%;
+    grid-column: 1;
+    align-self: center;
+}
+body{
+    background-color: aqua;
+}
+
+.datatable{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 50px 1fr;
+    background-color: rgb(245, 214, 174);
+    border: 3px solid aqua;
+    border-top: 6px solid aqua;
+}
+.weathertable{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 50px 1fr;
+    background-color: rgb(245, 214, 174);
+    border: 3px solid aqua;
+    
+}
+.infotype{
+    grid-column: 1/3;
+    width:100%;
+    font-size: 44px;
+    text-align: center;
+    font-weight: bolder;
+}
+.datafield{
+    grid-column:1/2;
+    text-align: right;
+    margin-right: 5px;
+}
+.datainfo{
+    grid-column:2/3;
+    margin-left: 5px;
+}
+
+#weatheremoji{
+    
+    max-width: 60px;
+    grid-column: 1/3;
+    align-items: center;
+}
+footer{
+    background-color: rgb(245, 214, 174);
+    height: 75px;
+    text-align: center;
+}
+

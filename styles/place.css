@@ -195,8 +195,6 @@ footer{
         justify-self: center;
     }
     .weatheremoji::after {
-        content: '';
-        background-image: url('images/cloud.svg');
         display: block;
         margin-top: 10px;
     }

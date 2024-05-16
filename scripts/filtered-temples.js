@@ -110,64 +110,40 @@ const temples = [
     },
   ];
 
+createTempleCard(temples);
+
+const oldLink = document.querySelector("#old");
+
+oldLink.addEventListener("click", () =>{
+    createTempleCard(temples.filter(temple => temple.dedicated<1900))
+})
 
 
 
+function createTempleCard(filteredTemples) {
+    document.querySelector(".grid").innerHTML = "";
+    temples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedicated = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
 
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy");
 
-  const container = document.createElement('div');
-container.className = 'temples-container';
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedicated);
+        card.appendChild(area);
+        card.appendChild(img);
 
-temples.forEach(temple => {
-  const templeCard = document.createElement('div');
-  templeCard.className = 'temple-card';
-
-  const templeName = document.createElement('h2');
-  templeName.textContent = temple.templeName;
-  templeCard.appendChild(templeName);
-
-  const location = document.createElement('p');
-  location.textContent = `Location: ${temple.location}`;
-  templeCard.appendChild(location);
-
-  const dedicated = document.createElement('p');
-  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
-  templeCard.appendChild(dedicated);
-
-  const area = document.createElement('p');
-  area.textContent = `Size: ${temple.area} sq ft`;
-  templeCard.appendChild(area);
-
-  const image = document.createElement('img');
-  image.src = temple.imageUrl;
-  image.alt = temple.templeName;
-  image.loading = 'lazy';
-  templeCard.appendChild(image);
-
-  container.appendChild(templeCard);
-});
-
-document.body.appendChild(container);
-
-// CSS (Assuming you want to add some basic styling)
-const style = document.createElement('style');
-style.textContent = `
-  .temples-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    text-align: center;
-    
-  }
-  .temple-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    max-width: 300px;
-    background: #D3D3D3;
-  }
-  .temple-card img {
-    width: 100%;
-    height: auto;
-  }
-`;
-document.head.appendChild(style);
+        document.querySelector(".grid").appendChild(card);
+    });
+}

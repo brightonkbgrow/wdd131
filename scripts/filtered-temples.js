@@ -84,7 +84,30 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+    templeName: "Laia Hawaii",
+    location: "Laia, Hawaii",
+    dedicated: "1919, November, 27",
+    area: 47224,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/7a0f50d86d25bad2131ff37fa7a90f48b5472df0/full/1600%2C/0/default"
+    },
+    {
+    templeName: "Mount Timpanogos Utah",
+    location: "Mount Timpanogos, Utah",
+    dedicated: "1996, October, 13",
+    area: 107240,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/b4b7425f9c94ab4c8086b24ab4a93531044093fe/full/1920%2C/0/default"
+    },
+    {
+    templeName: "Bountiful Utah",
+    location: "Bountiful, Utah",
+    dedicated: "1995, January, 8",
+    area: 104000,
+    imageUrl:
+    "https://www.churchofjesuschrist.org/imgs/ad136e9292c808a43e65262d436d94291dad09c8/full/1920%2C/0/default"
+    },
   ];
 
 

@@ -79,10 +79,13 @@ footer{
 
 .grid section {
     background-color: rgb(63, 63, 63);
+	max-width: 500px;
     border: 1px solid aqua;
 	color: white;
 	text-align: center;
-    box-shadow: 0 2px 4px black
+    box-shadow: 0 2px 4px black;
+	overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .grid section img {
@@ -105,9 +108,7 @@ footer{
     font-weight: bold;
 }
 
-
-
-
-
-
-
+.grid section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px black;
+}

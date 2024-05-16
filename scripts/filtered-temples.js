@@ -118,7 +118,12 @@ function getDedicatedYear(dateString) {
     return parseInt(dateParts[0], 10);
 }
 oldLink.addEventListener("click", () => {
-    const filteredTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) < 2000);
+    const filteredTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) < 1900);
+    createTempleCard(filteredTemples);
+});
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    const filteredTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) > 2000);
     createTempleCard(filteredTemples);
 });
 

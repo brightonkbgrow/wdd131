@@ -113,16 +113,18 @@ const temples = [
 createTempleCard(temples);
 
 const oldLink = document.querySelector("#old");
-
-oldLink.addEventListener("click", () =>{
-    createTempleCard(temples.filter(temple => temple.dedicated<1900))
-})
-
-
+function getDedicatedYear(dateString) {
+    const dateParts = dateString.split(", ");
+    return parseInt(dateParts[0], 10);
+}
+oldLink.addEventListener("click", () => {
+    const filteredTemples = temples.filter(temple => getDedicatedYear(temple.dedicated) < 2000);
+    createTempleCard(filteredTemples);
+});
 
 function createTempleCard(filteredTemples) {
     document.querySelector(".grid").innerHTML = "";
-    temples.forEach(temple => {
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");

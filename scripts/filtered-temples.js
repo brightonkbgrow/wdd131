@@ -116,10 +116,6 @@ function getDedicatedYear(dateString) {
     const dateParts = dateString.split(", ");
     return parseInt(dateParts[0], 10);
 }
-function getarea(areaString) {
-    const dateParts = areaString.split(", ");
-    return parseInt(areaParts[0], 10);
-}
 
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
@@ -135,17 +131,13 @@ newLink.addEventListener("click", () => {
 
 const largeLink = document.querySelector("#large");
 largeLink.addEventListener("click", () => {
-    const filteredTemples = temples.filter(temple => getarea(temple.area) > 90000);
-    createTempleCard(filteredTemples);
+    createTempleCard(temples.filter(temple => temple.area > 90000));
 });
 
 const smallLink = document.querySelector("#small");
-largeLink.addEventListener("click", () => {
-    const filteredTemples = temples.filter(temple => getarea(temple.area) < 10000);
-    createTempleCard(filteredTemples);
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
 });
-
-
 
 function createTempleCard(filteredTemples) {
     document.querySelector(".grid").innerHTML = "";

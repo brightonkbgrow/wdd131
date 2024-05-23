@@ -13,13 +13,12 @@
 <body>
     <main>
         <h1>Product Review</h1>
-        <form method="get" action="review.html" class="wf1">
+            <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <legend>Product Rating</legend> <!-- Added legend -->
-                <label for="product">Product Name</label> <!-- Added for attribute -->
-                <select id="product" name="product" required> <!-- Moved select outside of label -->
-                    <option value="" disabled selected>Select A Product...</option>
-                </select> <!-- Added closing tag -->
+                <label for="product">Product Name</label>
+                    <label><select id="product" name="product" required>
+                        <option value="" disabled selected>Select A Product...</option>
+                    </select>      
                 <div class="star-rating">
                     <input type="radio" name="stars" id="star-1" value="1" required/>
                     <label for="star-1"></label>
@@ -38,7 +37,7 @@
                 </div>
             </fieldset>
             <fieldset>
-                <label for="date">Date Of Installment</label> <input type="date" name="date" id="date"> <!-- Added id for accessibility -->
+                <label>Date Of Installment <input type="date" name="date"></label>
             </fieldset>
             <fieldset>
                 <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
@@ -49,21 +48,24 @@
             </fieldset>
             <fieldset>
                 <div>Written Review</div>
-                <textarea id="comment" name="comment"></textarea> <!-- Removed unnecessary wrapping label -->
+                <label><textarea id="comment" name="comment"></textarea></label>
                 <div>Your Name</div>
-                <input type="text" id="name" name="name"> <!-- Removed unnecessary wrapping label -->
+                <label><input type="text" id="name" name="name"></label>
             </fieldset>
             <div class="submitbutton">
                 <input type="submit" value="Complete Your Review">
             </div>
-        </form> <!-- Moved </main> tag to here -->
+            </form>
 
-    </main> <!-- Removed </main> tag from here -->
+        
+    </main>
     <footer>
         <p><span id="currentYear"></span> - Brighton Grow - Idaho</p>
 
-        <p>Last Modified <span id="lastModified"></span></p>
-
+            <p>Last Modified <span id="lastModified"></span></p>
+        
     </footer>
+
+
 </body>
 </html>

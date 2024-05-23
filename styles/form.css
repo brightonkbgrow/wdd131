@@ -6,6 +6,13 @@ main {
     padding: 0 2%;
     min-height: 20rem;
 }
+h1{
+    background-image: linear-gradient(rgb(136, 0, 0), rgb(46, 0, 0));
+    height: 75px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
 .wf1 fieldset{
     margin: 2rem 0;
     border: 1px solid #ddd;
@@ -46,7 +53,7 @@ main {
 }
 .wf1 input[type="submit"]{
     border: none;
-    background-image: linear-gradient(rgb(223, 0, 0), darkred);
+    background-image: linear-gradient(rgb(136, 0, 0), rgb(46, 0, 0));
     color: #fff;
     border-radius: 6px;
     padding: .8rem;
@@ -112,3 +119,10 @@ main {
     }
   }  
   
+  footer{
+    background-image: linear-gradient(rgb(136, 0, 0), rgb(46, 0, 0));
+    height: 75px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    }

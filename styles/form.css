@@ -104,13 +104,6 @@ h1{
   .star-rating input:checked ~ label:before {
     content:'\2605';
   }
-  @-moz-document url-prefix() {
-    .star-rating input:checked ~ label:before {
-    font-size: 36px;
-    line-height: 21px;
-    }
-  }  
-  
   footer{
     background-image: linear-gradient(rgb(136, 0, 0), rgb(46, 0, 0));
     height: 75px;

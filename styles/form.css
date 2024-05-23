@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
+    background-color: white;
 }
 main {
     padding: 0 2%;
@@ -15,6 +16,7 @@ h1{
 }
 .wf1 fieldset{
     margin: 2rem 0;
+    background-color: #eee;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
@@ -66,13 +68,6 @@ h1{
     margin: auto;
     box-shadow: 1px 1 px 4px #999;
 }
-.wf1 input:required{
-    border-left: solid 8px red;
-}
-.wf1 input:required:valid{
-    border-left: solid 8px green;
-}
-
 .star-rating {
     display: flex;
     align-items: center;

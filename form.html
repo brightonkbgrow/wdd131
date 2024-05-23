@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page for Product</title>
+    <meta name="author" content="Brighton Grow" />
+    <meta name="description" content="This site is a form site" />
+    <link href="styles/form.css" rel="stylesheet" />
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Product Review</h1>
+            <form method="get" action="review.html" class="wf1"></form>
+            <fieldset>
+                <label>Product Name</label>
+                    <select id="product" name="product" required>
+                    <option value="" disabled selected>Select A Product...</option>
+                    <option value="ac">AC Unit</option>
+                    <option value="fan">Ceiling Fan</option>
+                    <option value="window">Window</option>
+                    <option value="skylight">Skylight</option>
+                    </select>      
+                <legend>Course Information</legend>
+                <div>rating</div>
+                <label><input type="radio" id="onestar" name="star"> 1☆</label>
+                <label><input type="radio" id="twostar" name="star"> 2☆</label>
+                <label><input type="radio" id="threestar" name="star"> 3☆</label>
+                <label><input type="radio" id="fourstar" name="star"> 4☆</label>
+                <label><input type="radio" id="fivestar" name="star"> 5☆</label>
+                <label>Date Of Installment <input type="date" name="completedDate"></label>
+            </fieldset>
+            <fieldset>
+                <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+            </fieldset>
+            <fieldset>
+                <div>Written Review</div>
+                <textarea id="comment" name="comment"></textarea>
+                <div>Your Name</div>
+                <input type="text" id="name" name="name">
+            </fieldset>
+            
+            <input type="submit" value="Complete Your Review">
+
+            </form>
+        </main>
+        <footer>
+            <p><span id="currentYear"></span> - Brighton Grow - Idaho</p>
+
+                <p>Last Modified <span id="lastModified"></span></p>
+            
+        </footer>
+
+
+</body>
+</html>

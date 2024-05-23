@@ -13,7 +13,7 @@
 <body>
     <main>
         <h1>Product Review</h1>
-            <form method="get" action="review.html" class="wf1"></form>
+            <form method="get" action="review.html" class="wf1">
             <fieldset>
                 <label>Product Name</label>
                     <select id="product" name="product" required>
@@ -24,13 +24,25 @@
                     <option value="skylight">Skylight</option>
                     </select>      
                 <legend>Course Information</legend>
-                <div>rating</div>
-                <label><input type="radio" id="onestar" name="star"> 1☆</label>
-                <label><input type="radio" id="twostar" name="star"> 2☆</label>
-                <label><input type="radio" id="threestar" name="star"> 3☆</label>
-                <label><input type="radio" id="fourstar" name="star"> 4☆</label>
-                <label><input type="radio" id="fivestar" name="star"> 5☆</label>
-                <label>Date Of Installment <input type="date" name="completedDate"></label>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <label for="star-a"></label>
+              
+                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <label for="star-e"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Date Of Installment <input type="date" name="date"></label>
             </fieldset>
             <fieldset>
                 <div>Which features did you find useful in the product?<br>(Check all that apply)</div>
@@ -49,13 +61,15 @@
             <input type="submit" value="Complete Your Review">
 
             </form>
-        </main>
-        <footer>
-            <p><span id="currentYear"></span> - Brighton Grow - Idaho</p>
 
-                <p>Last Modified <span id="lastModified"></span></p>
-            
-        </footer>
+        
+    </main>
+    <footer>
+        <p><span id="currentYear"></span> - Brighton Grow - Idaho</p>
+
+            <p>Last Modified <span id="lastModified"></span></p>
+        
+    </footer>
 
 
 </body>

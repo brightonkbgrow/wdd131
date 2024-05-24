@@ -4,20 +4,30 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color: rgb(56, 59, 59);
+    color: white;
 }
 
 h2 {
-    color: white;
     font-family: "poetsen one";
     font-weight:400 ;
+    font-size: 2rem;
 }
 
 p {
-    color: white;
     font-family: "roboto";
 }
 .partition{
     border:2px solid rgb(0, 196, 196);
     border-radius: 15px;
     margin-bottom: 5px;
+}
+.mobileframe{
+    max-width: 20%;
+    margin-left: 25px;
+}
+.wireframe{
+    max-height: 500px;
+}
+.desktopframe{
+    max-width: 35%;
 }

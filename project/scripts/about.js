@@ -1,4 +1,3 @@
-// Function to populate about page content
 function populateAboutPage() {
     const aboutText = `
         <h2>About Fedex</h2>
@@ -8,7 +7,6 @@ function populateAboutPage() {
     document.getElementById('aboutContent').innerHTML = aboutText;
 }
 
-// Function to handle click event on a button
 function handleButtonClick() {
     const button = document.getElementById('aboutButton');
     button.addEventListener('click', () => {
@@ -16,6 +14,5 @@ function handleButtonClick() {
     });
 }
 
-// Call functions to populate content and add event listeners
 populateAboutPage();
 handleButtonClick();

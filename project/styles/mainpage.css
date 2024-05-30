@@ -43,10 +43,9 @@ footer {
     border: 2px solid rgb(0, 196, 196);
     text-align: center;
     padding: 0px;
-    position: fixed;
-    
     width: 100%;
     bottom: 0;
+
 }
 @media (min-width: 610px) {
     h1{

@@ -87,7 +87,12 @@ footer {
         grid-column: 1;
         max-width: 100%;
     }
-
+    #maintext2{
+        grid-column: 1;
+        max-width: 100%;
+        font-size: 3rem;
+        margin-top: 0px;
+    }
 }
 
 
@@ -127,5 +132,11 @@ footer {
     #main2{
         grid-row: 1;
         max-width: 100%;
+    }
+    #maintext2{
+        grid-column: 1;
+        max-width: 100%;
+        font-size: 3rem;
+        margin-top: 0px;
     }
 }

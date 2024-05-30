@@ -1,3 +1,9 @@
+const currentYear = new Date().getFullYear();
+document.getElementById('currentYear').textContent = currentYear;
+
+const lastModified = document.lastModified;
+document.getElementById('lastModified').textContent = lastModified;
+
 const galleryImages = [
     'images/bush1.webp',
     'images/candy.webp',

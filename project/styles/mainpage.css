@@ -45,6 +45,8 @@ footer {
     padding: 0px;
     width: 100%;
     bottom: 0;
+    margin: 1rem;
+    border-radius: 3rem;
 
 }
 @media (min-width: 610px) {

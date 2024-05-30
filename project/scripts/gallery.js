@@ -1,4 +1,3 @@
-// Array of image URLs for Fedex's gallery
 const galleryImages = [
     'images/bush1.webp',
     'images/candy.webp',
@@ -10,7 +9,6 @@ const galleryImages = [
 
 ];
 
-// Function to display gallery images with lazy loading
 function displayGalleryWithLazyLoading() {
     const galleryContainer = document.getElementById('galleryContainer');
 
@@ -18,7 +16,7 @@ function displayGalleryWithLazyLoading() {
         const imgElement = document.createElement('img');
         imgElement.src = image;
         imgElement.alt = 'Fedex';
-        imgElement.loading = 'lazy'; // Set loading attribute to "lazy"
+        imgElement.loading = 'lazy';
         
         const galleryItem = document.createElement('div');
         galleryItem.classList.add('gallery-item');
@@ -27,6 +25,4 @@ function displayGalleryWithLazyLoading() {
         galleryContainer.appendChild(galleryItem);
     });
 }
-
-// Call function to display gallery with lazy loading
 displayGalleryWithLazyLoading();

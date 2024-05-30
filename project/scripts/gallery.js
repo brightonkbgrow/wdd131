@@ -1,25 +1,32 @@
+// Array of image URLs for Fedex's gallery
 const galleryImages = [
-    'images/fedex1.jpg',
-    'images/fedex2.jpg',
-    'images/fedex3.jpg',
-    // Add more image URLs as needed
+    'images/bush1.webp',
+    'images/candy.webp',
+    'images/destiny.webp',
+    'images/lapcat.webp',
+    'images/powerstance.webp',
+    'images/bush2.webp',
+    'images/painterstape.webp',
+
 ];
 
-// Function to display gallery images
-function displayGallery() {
+// Function to display gallery images with lazy loading
+function displayGalleryWithLazyLoading() {
     const galleryContainer = document.getElementById('galleryContainer');
-    let galleryHTML = '';
 
     galleryImages.forEach((image) => {
-        galleryHTML += `
-            <div class="gallery-item">
-                <img src="${image}" alt="Fedex">
-            </div>
-        `;
-    });
+        const imgElement = document.createElement('img');
+        imgElement.src = image;
+        imgElement.alt = 'Fedex';
+        imgElement.loading = 'lazy'; // Set loading attribute to "lazy"
+        
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item');
+        galleryItem.appendChild(imgElement);
 
-    galleryContainer.innerHTML = galleryHTML;
+        galleryContainer.appendChild(galleryItem);
+    });
 }
 
-// Call function to display gallery
-displayGallery();
+// Call function to display gallery with lazy loading
+displayGalleryWithLazyLoading();

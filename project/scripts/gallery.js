@@ -1,4 +1,3 @@
-// Array of image URLs for Fedex's gallery
 const galleryImages = [
     'images/fedex1.jpg',
     'images/fedex2.jpg',

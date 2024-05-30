@@ -12,6 +12,10 @@ const galleryImages = [
     'images/powerstance.webp',
     'images/bush2.webp',
     'images/painterstape.webp',
+    'images/whippedcream.webp',
+    'images/curl.webp',
+    'images/hellofresh.webp',
+    'images/young.webp',
 
 ];
 

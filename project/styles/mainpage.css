@@ -3,11 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(56, 59, 59);
+    color: white;
 }
 
 header {
-    background-color: #333;
+    background-color: #252525;
     color: white;
+    border: 2px solid rgb(0, 196, 196);
     padding: 1em;
     border-radius: 3rem;
     margin: 1rem;
@@ -18,7 +21,6 @@ nav{
 
 nav ul li {
     display: inline;
-    margin-right: 1em;
 }
 
 nav ul li a {
@@ -32,8 +34,9 @@ main {
     padding: 2em;
 }
 footer {
-    background-color: #333;
+    background-color: #252525;
     color: white;
+    border: 2px solid rgb(0, 196, 196);
     text-align: center;
     padding: 1rem;
     position: fixed;
@@ -67,8 +70,8 @@ footer {
     #maintext1{
         grid-column: 1;
         max-width: 100%;
-        font-size: 2.5rem;
-        margin: 0px;
+        font-size: 3rem;
+        margin-top: 0px;
     }
 
     .mainblock2{
@@ -103,9 +106,14 @@ footer {
         grid-template-rows: 1fr 1fr;
     }
     #main1{
+        grid-row: 2;
+        max-width: 100%;
+    }
+    #maintext1{
         grid-row: 1;
         max-width: 100%;
-        
+        font-size: 2.5rem;
+        margin: 0px;
     }
     .mainblock2{
         display:grid;

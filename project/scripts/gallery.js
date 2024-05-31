@@ -12,9 +12,7 @@ const galleryImages = [
     'images/destiny.webp',
     'images/lapcat.webp',
     'images/powerstance.webp',
-    
     'images/painterstape.webp',
-    
     'images/curl.webp',
     'images/hellofresh.webp',
     'images/young.webp',

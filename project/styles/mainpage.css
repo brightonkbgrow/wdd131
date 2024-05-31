@@ -8,8 +8,11 @@ body {
     background-color: rgb(56, 59, 59);
     color: white;
 }
-h1{
+h1, h2{
     font-family: "poetsen one";
+}
+h2{
+    font-weight: lighter;
 }
 header {
     background-color: #252525;
@@ -51,16 +54,19 @@ footer {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 10px; /* Gap between grid items */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
     margin: 1rem; 
 }
 .gallery-item img {
-    max-width: 100%; /* Limit maximum width to container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
     display: block;
-    margin: 0 auto; /* Center the image within its container */
+    margin: 0 auto; 
 }
+
+
+
+
 
 
 

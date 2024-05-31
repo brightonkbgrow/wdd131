@@ -7,12 +7,14 @@ document.getElementById('lastModified').textContent = lastModified;
 const galleryImages = [
     'images/bush1.webp',
     'images/candy.webp',
+    'images/bush2.webp',
+    'images/whippedcream.webp',
     'images/destiny.webp',
     'images/lapcat.webp',
     'images/powerstance.webp',
-    'images/bush2.webp',
+    
     'images/painterstape.webp',
-    'images/whippedcream.webp',
+    
     'images/curl.webp',
     'images/hellofresh.webp',
     'images/young.webp',

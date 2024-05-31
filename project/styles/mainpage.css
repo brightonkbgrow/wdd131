@@ -47,8 +47,22 @@ footer {
     bottom: 0;
     margin: 1rem;
     border-radius: 2rem;
-
 }
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px; /* Gap between grid items */
+    margin: 1rem; 
+}
+.gallery-item img {
+    max-width: 100%; /* Limit maximum width to container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image within its container */
+}
+
+
 
 @media (min-width: 1150px) {
     h1{
@@ -97,6 +111,16 @@ footer {
         font-size: 2rem;
         margin: 1rem;
     }
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        max-width:100%;
+    }
+    .gallery-image img{
+        max-width:100px;
+        width: auto;
+    }
 }
 
 
@@ -143,4 +167,8 @@ footer {
         font-size: 2rem;
         margin-top: 0px;
     }
+    .gallery-container {
+        grid-template-columns: 1fr; /* One column */
+    }
 }
+

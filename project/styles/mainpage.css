@@ -184,7 +184,7 @@ button:hover{
         margin-top: 0px;
     }
     .gallery-container {
-        grid-template-columns: 1fr; /* One column */
+        grid-template-columns: 1fr;
     }
 }
 

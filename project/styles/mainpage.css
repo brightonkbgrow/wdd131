@@ -8,10 +8,10 @@ body {
     background-color: rgb(56, 59, 59);
     color: white;
 }
-h1, h2{
+h1, h2, button{
     font-family: "poetsen one";
 }
-h2{
+h2, button{
     font-weight: lighter;
 }
 header {
@@ -51,7 +51,22 @@ footer {
     margin: 1rem;
     border-radius: 2rem;
 }
-
+#aboutcontent{
+    text-align: center;
+}
+button{
+    background-color: #252525;
+    color:white;
+    text-decoration:underline;
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 2px solid rgb(0, 196, 196);
+}
+button:hover{
+    color: rgb(0, 196, 196);
+    text-decoration:underline;
+}
 .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -63,12 +78,6 @@ footer {
     display: block;
     margin: 0 auto; 
 }
-
-
-
-
-
-
 
 @media (min-width: 1150px) {
     h1{

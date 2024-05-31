@@ -6,7 +6,6 @@ document.getElementById('lastModified').textContent = lastModified;
 
 function populateAboutPage() {
     const aboutText = `
-        <h2>About Fedex</h2>
         <h2>Name</h2>
         <p>Fedex got his name after being adopted. His previous name was Paul, which was not fitting. He was renamed to Fedex as he paid attention the a large Fedex truck on his first ride home.</p>
         <h2>Home</h2>
@@ -14,7 +13,7 @@ function populateAboutPage() {
         <h2>Adventures</h2>
         <p>Fedex goes on many adventures with his favorite people. He waits by the door and will request to leave. He is the harnessed, collared, and taken out on the town where he finds the most uninteresting things to smell.</p>
         <h2>Favorite Foods</h2>
-        <p></p>
+        <p>Whipped Cream, Strawberries, Taquitos, Q-tips, and Raw Salmon are some of Fedex's favorite foods!</p>
     `;
     document.getElementById('aboutcontent').innerHTML = aboutText;
 

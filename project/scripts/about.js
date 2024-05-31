@@ -16,7 +16,7 @@ function populateAboutPage() {
         <h2>Favorite Foods</h2>
         <p></p>
     `;
-    document.getElementById('aboutContent').innerHTML = aboutText;
+    document.getElementById('aboutcontent').innerHTML = aboutText;
 
     const aboutButton = document.createElement('button');
     aboutButton.textContent = 'Watch Fedex Explore';
